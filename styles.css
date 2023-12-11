@@ -166,8 +166,16 @@ body {
 }
 
 .skills__text {
+        display: grid;
+            grid-template-columns: 1fr 1fr;
     color: var(--secondary-text-color);
     text-align: justify;
+  
+}
+@media screen and (max-width: 576px) {
+    .skills__text {
+        display: block;
+    }
 }
 
 /* Experience and additional info styles  */
